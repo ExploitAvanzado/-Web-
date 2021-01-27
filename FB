@@ -48,7 +48,7 @@ foreach(@dic)
 		my $res			= $ua->request($req);
 		my $respuesta 	= $res->as_string;
 		
-		print "\nAtacando con [Usuario]:[$usuario] y [Password]:[$password]";
+		print "\nINTENTANDO INICIAR SESION CON --> [Usuario]:[$usuario] y [Password]:[$password]";
 		
 		if ($respuesta !~ /ACCESO DENEGADO/)
 		{
