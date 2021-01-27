@@ -7,16 +7,7 @@ use LWP::UserAgent;
 
  
 if ($#ARGV < 1)
-{
 
-print "╔╗ ╦ ╦  ╔═╗╔╦╗╔═╗╦═╗╔╗╔╔═╗╦    ╔╦╗╔═╗╔╦╗╔═╗╔╗╔";
-print "╠╩╗╚╦╝  ║╣  ║ ║╣ ╠╦╝║║║╠═╣║     ║║║╣ ║║║║ ║║║║";
-print "╚═╝ ╩   ╚═╝ ╩ ╚═╝╩╚═╝╚╝╩ ╩╩═╝  ═╩╝╚═╝╩ ╩╚═╝╝╚╝";
-'''
-	print "\nUso: perl FB [URL] [DICCIONARIO]\n";
-	print "Ej.: perl FB www.victima.com/login.php 'lib.ibs'\n\n";
-	exit();
-}
  
 my $url		= @ARGV[0];
 my $fdic	= @ARGV[1];
