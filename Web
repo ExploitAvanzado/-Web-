@@ -50,7 +50,7 @@ foreach(@dic)
 		
 		print "\nINTENTANDO INICIAR SESION CON --> [Usuario]:[$usuario] y [Password]:[$password]";
 		
-		if ($respuesta !~ /ACCESO DENEGADO/)
+		if ($respuesta !~ /Username or email is invalid /)
 		{
 		print " 
 ╔═╗╔╦╗╔═╗╔═╗ ╦ ╦╔═╗  ╔═╗═╗ ╦╦╔╦╗╔═╗╔═╗╔═╗
